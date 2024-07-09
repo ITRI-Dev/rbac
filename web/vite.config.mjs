@@ -6,7 +6,7 @@ const ViteConfig = ({ mode }) => {
   import.meta.env = { ...import.meta.env, ...loadEnv(mode, process.cwd()) };
 
   return defineConfig({
-    server: { https: false, port: 3000 },
+    server: { https: false, port: 3001 },
     plugins: [react(), mkcert()],
   });
 };
